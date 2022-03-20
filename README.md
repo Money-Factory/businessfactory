@@ -107,7 +107,7 @@ Distributed under the GPL License. See [LICENSE.md](LICENSE.md) for more informa
 
 ## Acknowledgments
 
-A big thanks to all the authors of the projects that make this setup possible.
+A big thanks to all the authors of the projects that make this game possible.
 
 * TODO
 
