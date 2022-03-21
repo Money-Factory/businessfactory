@@ -53,6 +53,12 @@ This repository contains the source code for the Business Factory idle/increment
 
 - [Expo](https://expo.dev/)
 
+- [Yarn](https://yarnpkg.com/)
+
+- [React Native](https://reactnative.dev/)
+
+- [TypeScript](https://www.typescriptlang.org/)
+
 ## Getting Started
 
 Below are instructions for setting up your development environment.
@@ -73,6 +79,12 @@ Install the necessary tools and pre-commit hooks so you can ensure your changes 
 
   ```sh
   expo register
+  ```
+
+- yarn
+
+  ```sh
+  npm install --global yarn
   ```
 
 - pre-commit
