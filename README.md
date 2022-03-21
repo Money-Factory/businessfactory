@@ -97,27 +97,27 @@ pre-commit install
 
 1. Clone the repo
 
-```sh
-git clone https://github.com/Money-Factory/businessfactory.git
-```
+  ```sh
+  git clone https://github.com/Money-Factory/businessfactory.git
+  ```
 
 1. Install dependencies
 
-```sh
-yarn
-```
+  ```sh
+  yarn
+  ```
 
 1. Log in with your expo account
 
-```sh
-expo login
-```
+  ```sh
+  expo login
+  ```
 
 1. Start the project
 
-```sh
-yarn start
-```
+  ```sh
+  yarn start
+  ```
 
 1. Scan the QR code on your phone to install the app or press `w` to open the web app
 
