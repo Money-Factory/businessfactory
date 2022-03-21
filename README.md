@@ -67,12 +67,6 @@ Below are instructions for setting up your development environment.
 
 Install the necessary tools and pre-commit hooks so you can ensure your changes the checks.
 
-- expo-cli
-
-  ```sh
-  npm install --global expo-cli
-  ```
-
 - Expo Go app installed on your device
 
 - Expo account. You can use the cli to create one
@@ -107,6 +101,12 @@ pre-commit install
 git clone https://github.com/Money-Factory/businessfactory.git
 ```
 
+1. Install dependencies
+
+```sh
+yarn
+```
+
 1. Log in with your expo account
 
 ```sh
@@ -116,7 +116,7 @@ expo login
 1. Start the project
 
 ```sh
-npm start
+yarn start
 ```
 
 1. Scan the QR code on your phone to install the app or press `w` to open the web app
