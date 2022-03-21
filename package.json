@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --watchAll",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint ./*"
   },
   "jest": {
     "preset": "jest-expo"
@@ -36,8 +37,10 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/jest": "^27.4.1",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
+    "@types/react-test-renderer": "^17.0.1",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",

@@ -27,5 +27,5 @@ jobs:
         if: ${{ steps.filter.outputs.markdown == 'true' }}
         uses: avto-dev/markdown-lint@v1.5.0
         with:
-          config: '.github/lint/.markdownlint.yaml'
-          args: '${{ steps.filter.outputs.markdown_files }}'
+          config: ".github/lint/.markdownlint.yaml"
+          args: "${{ steps.filter.outputs.markdown_files }}"

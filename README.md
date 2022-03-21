@@ -51,7 +51,7 @@ This repository contains the source code for the Business Factory idle/increment
 
 ### Built With
 
-* [Expo](https://expo.dev/)
+- [Expo](https://expo.dev/)
 
 ## Getting Started
 
@@ -63,13 +63,13 @@ Below are instructions for setting up your development environment.
 
 Install the necessary tools and pre-commit hooks so you can ensure your changes the checks.
 
-* expo-cli
+- expo-cli
 
   ```sh
   npm install --global expo-cli
   ```
 
-* pre-commit
+- pre-commit
 
   ```sh
   pip install --user pre-commit
@@ -109,10 +109,11 @@ Distributed under the GPL License. See [LICENSE.md](LICENSE.md) for more informa
 
 A big thanks to all the authors of the projects that make this game possible.
 
-* TODO
+- TODO
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [forks-shield]: https://img.shields.io/github/forks/Money-Factory/businessfactory.svg?style=for-the-badge
 [forks-url]: https://github.com/Money-Factory/businessfactory/network/members
 [stars-shield]: https://img.shields.io/github/stars/Money-Factory/businessfactory.svg?style=for-the-badge
