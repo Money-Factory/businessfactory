@@ -33,10 +33,10 @@ export type TextProps = ThemeProps & DefaultText['props'];
 export type ViewProps = ThemeProps & DefaultView['props'];
 
 export function Text(props: TextProps) {
-  const { style, lightColor, darkColor } = props;
+  const { style, lightColor, darkColor, children } = props;
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 
-  return <DefaultText style={[{ color }, style]} />;
+  return <DefaultText style={[{ color }, style]}>{children}</DefaultText>;
 }
 
 Text.defaultProps = {
@@ -45,13 +45,15 @@ Text.defaultProps = {
 };
 
 export function View(props: ViewProps) {
-  const { style, lightColor, darkColor } = props;
+  const { style, lightColor, darkColor, children } = props;
   const backgroundColor = useThemeColor(
     { light: lightColor, dark: darkColor },
     'background'
   );
 
-  return <DefaultView style={[{ backgroundColor }, style]} />;
+  return (
+    <DefaultView style={[{ backgroundColor }, style]}>{children}</DefaultView>
+  );
 }
 
 View.defaultProps = {
