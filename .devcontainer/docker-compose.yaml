@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  expo-app:
+    build:
+      context: .
+    env_file: .env
+    ports:
+      - '19000:19000'
+      - '19001:19001'
+      - '19002:19002'
+    volumes:
+      - ${PWD}/:/app/
