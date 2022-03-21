@@ -4,10 +4,9 @@
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
-    "plugin:prettier/recommended",
     "prettier"
   ],
-  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "plugins": ["@typescript-eslint", "react"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -23,14 +22,6 @@
       1,
       {
         "extensions": [".ts", ".tsx"]
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "trailingComma": "all",
-        "endOfLine": "auto"
       }
     ],
     "no-use-before-define": "off",

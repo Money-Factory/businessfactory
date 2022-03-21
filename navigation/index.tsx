@@ -93,7 +93,7 @@ function BottomTabNavigator() {
           headerRight: () =>
             RightHeader(
               () => navigation.navigate('Modal'),
-              Colors[colorScheme].text,
+              Colors[colorScheme].text
             ),
         })}
       />
