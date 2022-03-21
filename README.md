@@ -57,8 +57,6 @@ This repository contains the source code for the Business Factory idle/increment
 
 Below are instructions for setting up your development environment.
 
-1. TODO
-
 ### Prerequisites
 
 Install the necessary tools and pre-commit hooks so you can ensure your changes the checks.
@@ -67,6 +65,14 @@ Install the necessary tools and pre-commit hooks so you can ensure your changes 
 
   ```sh
   npm install --global expo-cli
+  ```
+
+- Expo Go app installed on your device
+
+- Expo account. You can use the cli to create one
+
+  ```sh
+  expo register
   ```
 
 - pre-commit
@@ -85,20 +91,32 @@ pre-commit install
 
 1. Clone the repo
 
-   ```sh
-   git clone https://github.com/Money-Factory/businessfactory.git
-   ```
+```sh
+git clone https://github.com/Money-Factory/businessfactory.git
+```
 
-1. TODO: Remaining install steps
+1. Log in with your expo account
+
+```sh
+expo login
+```
+
+1. Start the project
+
+```sh
+npm start
+```
+
+1. Scan the QR code on your phone to install the app or press `w` to open the web app
 
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b username/feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+4. Push to the Branch (`git push origin username/feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## License
@@ -108,8 +126,6 @@ Distributed under the GPL License. See [LICENSE.md](LICENSE.md) for more informa
 ## Acknowledgments
 
 A big thanks to all the authors of the projects that make this game possible.
-
-- TODO
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

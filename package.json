@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start": "expo start --tunnel",
+    "android": "expo start --tunnel --android",
+    "ios": "expo start --tunnel --ios",
+    "web": "expo start --tunnel --web",
     "eject": "expo eject",
     "test": "jest --watchAll",
-    "prepare": "husky install",
     "lint": "eslint . --fix",
     "format": "prettier . --write"
   },

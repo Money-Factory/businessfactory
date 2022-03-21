@@ -91,10 +91,10 @@ function BottomTabNavigator() {
           title: 'Tab One',
           tabBarIcon: ({ color }) => BottomTabIcon(color),
           headerRight: () =>
-            RightHeader(
-              () => navigation.navigate('Modal'),
-              Colors[colorScheme].text
-            ),
+            RightHeader({
+              onPress: () => navigation.navigate('Modal'),
+              color: Colors[colorScheme].text,
+            }),
         })}
       />
       <BottomTab.Screen
