@@ -9,7 +9,7 @@ EXPOSE $PORT 19001 19002
 
 WORKDIR /app
 
-COPY ./package.json ./yarn.lock ./app.json ./
+COPY package.json yarn.lock app.json ./
 
 RUN yarn
 
