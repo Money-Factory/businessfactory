@@ -14,5 +14,3 @@ COPY package.json yarn.lock app.json ./
 RUN yarn
 
 USER node
-
-ENTRYPOINT ["yarn"]
