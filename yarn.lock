@@ -1849,6 +1849,139 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/ngrok-bin-darwin-arm64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-darwin-arm64@npm:2.3.40"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-darwin-x64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-darwin-x64@npm:2.3.40"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-freebsd-ia32@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-freebsd-ia32@npm:2.3.40"
+  conditions: os=freebsd & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-freebsd-x64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-freebsd-x64@npm:2.3.40"
+  conditions: os=freebsd & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-linux-arm64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-linux-arm64@npm:2.3.40"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-linux-arm@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-linux-arm@npm:2.3.40"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-linux-ia32@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-linux-ia32@npm:2.3.40"
+  conditions: os=linux & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-linux-x64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-linux-x64@npm:2.3.40"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-sunos-x64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-sunos-x64@npm:2.3.40"
+  conditions: os=sunos & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-win32-ia32@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-win32-ia32@npm:2.3.40"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin-win32-x64@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin-win32-x64@npm:2.3.40"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok-bin@npm:2.3.40":
+  version: 2.3.40
+  resolution: "@expo/ngrok-bin@npm:2.3.40"
+  dependencies:
+    "@expo/ngrok-bin-darwin-arm64": 2.3.40
+    "@expo/ngrok-bin-darwin-x64": 2.3.40
+    "@expo/ngrok-bin-freebsd-ia32": 2.3.40
+    "@expo/ngrok-bin-freebsd-x64": 2.3.40
+    "@expo/ngrok-bin-linux-arm": 2.3.40
+    "@expo/ngrok-bin-linux-arm64": 2.3.40
+    "@expo/ngrok-bin-linux-ia32": 2.3.40
+    "@expo/ngrok-bin-linux-x64": 2.3.40
+    "@expo/ngrok-bin-sunos-x64": 2.3.40
+    "@expo/ngrok-bin-win32-ia32": 2.3.40
+    "@expo/ngrok-bin-win32-x64": 2.3.40
+  dependenciesMeta:
+    "@expo/ngrok-bin-darwin-arm64":
+      optional: true
+    "@expo/ngrok-bin-darwin-x64":
+      optional: true
+    "@expo/ngrok-bin-freebsd-ia32":
+      optional: true
+    "@expo/ngrok-bin-freebsd-x64":
+      optional: true
+    "@expo/ngrok-bin-linux-arm":
+      optional: true
+    "@expo/ngrok-bin-linux-arm64":
+      optional: true
+    "@expo/ngrok-bin-linux-ia32":
+      optional: true
+    "@expo/ngrok-bin-linux-x64":
+      optional: true
+    "@expo/ngrok-bin-sunos-x64":
+      optional: true
+    "@expo/ngrok-bin-win32-ia32":
+      optional: true
+    "@expo/ngrok-bin-win32-x64":
+      optional: true
+  bin:
+    ngrok: bin/ngrok.js
+  checksum: ffa2769b6bfca619f301e5f3c080c4214b11f7af5700c742997b242e46d0118ae1d7f352b2a0124a51ff5fff6ae7313e47e662eb8dbc5bc8a3dc2f1e2287c04a
+  languageName: node
+  linkType: hard
+
+"@expo/ngrok@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@expo/ngrok@npm:4.1.0"
+  dependencies:
+    "@expo/ngrok-bin": 2.3.40
+    got: ^11.5.1
+    uuid: ^3.3.2
+    yaml: ^1.10.0
+  checksum: 0e4cd2b2b17cf03e6139d72faf063dc6e5b500a80003e8a8abac4b7250edb92be2d7185287b56d0abf5e67f9cd37aa389f0aeb129304d7b443b12080cd1f6f36
+  languageName: node
+  linkType: hard
+
 "@expo/osascript@npm:2.0.31":
   version: 2.0.31
   resolution: "@expo/osascript@npm:2.0.31"
@@ -4801,6 +4934,7 @@ __metadata:
   resolution: "business-factory@workspace:."
   dependencies:
     "@babel/core": ^7.12.9
+    "@expo/ngrok": ^4.1.0
     "@expo/vector-icons": ^12.0.0
     "@react-navigation/bottom-tabs": ^6.0.5
     "@react-navigation/native": ^6.0.2
@@ -8680,7 +8814,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"got@npm:^11.1.4":
+"got@npm:^11.1.4, got@npm:^11.5.1":
   version: 11.8.3
   resolution: "got@npm:11.8.3"
   dependencies:
@@ -18350,6 +18484,13 @@ __metadata:
   version: 4.0.0
   resolution: "yallist@npm:4.0.0"
   checksum: 343617202af32df2a15a3be36a5a8c0c8545208f3d3dfbc6bb7c3e3b7e8c6f8e7485432e4f3b88da3031a6e20afa7c711eded32ddfb122896ac5d914e75848d5
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^1.10.0":
+  version: 1.10.2
+  resolution: "yaml@npm:1.10.2"
+  checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
   languageName: node
   linkType: hard
 

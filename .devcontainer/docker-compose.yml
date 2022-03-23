@@ -5,6 +5,10 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
+    ports:
+      - 19000:19000
+      - 19001:19001
+      - 19002:19002
     env_file: .env
     volumes:
       - ..:/app

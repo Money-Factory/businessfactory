@@ -11,4 +11,8 @@ RUN yarn
 
 USER node
 
+EXPOSE 19000
+EXPOSE 19001
+EXPOSE 19002
+
 ENTRYPOINT ["yarn", "start"]
