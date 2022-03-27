@@ -10,8 +10,8 @@
     "web": "expo start --tunnel --web",
     "eject": "expo eject",
     "test": "jest --watchAll",
-    "lint": "eslint . --fix",
-    "format": "prettier . --write"
+    "lint": "eslint source --fix",
+    "format": "prettier source --write"
   },
   "jest": {
     "preset": "jest-expo"
