@@ -1,14 +1,17 @@
 {
   "name": "business-factory",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "packageManager": "yarn@3.2.0",
+  "version": "0.0.1",
+  "main": "source/App.tsx",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start": "expo start --tunnel",
+    "android": "expo start --tunnel --android",
+    "ios": "expo start --tunnel --ios",
+    "web": "expo start --tunnel --web",
     "eject": "expo eject",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll",
+    "lint": "eslint source --fix",
+    "format": "prettier source --write"
   },
   "jest": {
     "preset": "jest-expo"
@@ -35,10 +38,24 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@expo/ngrok": "^4.1.0",
+    "@types/jest": "^27.4.1",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
-    "jest-expo": "~44.0.1",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "expo-cli": "^5.3.0",
     "jest": "^26.6.3",
+    "jest-expo": "~44.0.1",
+    "prettier": "^2.6.0",
     "react-test-renderer": "17.0.1",
     "typescript": "~4.3.5"
   },
