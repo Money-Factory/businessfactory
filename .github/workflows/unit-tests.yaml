@@ -24,12 +24,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: install
+      run: yarn
     - name: Run unit tests
-      uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: test
-      env:
-        CI: true
+      run: yarn test
