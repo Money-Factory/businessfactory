@@ -2,7 +2,7 @@
   "name": "business-factory",
   "packageManager": "yarn@3.2.0",
   "version": "0.0.1",
-  "main": "node_modules/expo/AppEntry.js",
+  "main": "source/App.tsx",
   "scripts": {
     "start": "expo start --tunnel",
     "android": "expo start --tunnel --android",
