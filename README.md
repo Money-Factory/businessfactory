@@ -81,6 +81,12 @@ Install the necessary tools and pre-commit hooks so you can ensure your changes 
   npm install --global yarn
   ```
 
+- markdownlint
+
+  ```sh
+  npm install -g markdownlint-cli
+  ```
+
 - pre-commit
 
   ```sh
@@ -96,18 +102,25 @@ pre-commit install
 ### Installation
 
 1. Clone the repo
+
     ```sh
     git clone https://github.com/Money-Factory/businessfactory.git
     ```
+
 1. Install dependencies
+
     ```sh
     yarn
     ```
+
 1. Log in with your expo account
+
     ```sh
     expo login
     ```
+
 1. Start the project
+
     ```sh
     yarn start
     ```
