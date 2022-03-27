@@ -1,4 +1,10 @@
-<!-- markdownlint-disable-next-line MD041 -->
+---
+name: Bug report
+about: Report an issue with this project
+title: ''
+labels: kind/bug
+assignees: ''
+---
 
 ## Description of the change
 
