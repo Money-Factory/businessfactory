@@ -1,5 +1,4 @@
 <!-- markdownlint-disable-next-line MD041 -->
-
 ## Description of the change
 
 <!-- Describe the scope of your change - i.e. what the change does. -->
