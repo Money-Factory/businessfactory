@@ -2,7 +2,7 @@
   "name": "expo-dev",
   "dockerComposeFile": "docker-compose.yml",
   "service": "expo-app",
-  "workspaceFolder": "/app",
+  "workspaceFolder": "/home/node/app",
   //  IDs of extensions to be installed when the container is created.
   "extensions": [
     "equinusocio.vsc-material-theme",
