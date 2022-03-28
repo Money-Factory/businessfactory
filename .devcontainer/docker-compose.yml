@@ -11,4 +11,4 @@ services:
       - 19002:19002
     env_file: .env
     volumes:
-      - ..:/app
+      - ../source:/home/node/app/source
