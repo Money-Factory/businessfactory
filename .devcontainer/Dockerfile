@@ -3,13 +3,13 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:16
 ARG NODE_ENV=production
 ENV NODE_ENV $NODE_ENV
 
-WORKDIR /app
+USER node
 
-COPY package.json yarn.lock app.json ./
+RUN mkdir -p /home/node/app
+WORKDIR /home/node/app
+COPY --chown=node:node . .
 
 RUN yarn
-
-USER node
 
 EXPOSE 19000
 EXPOSE 19001
