@@ -7,9 +7,9 @@
     Let's do business.
     <br />
     <br />
-    <a href="https://github.com/Money-Factory/businessfactory/issues">Report Bug</a>
+    <a href="https://github.com/Money-Factory/businessfactory/issues/new?labels=kind%2Fbug&template=bug-report.md">Report Bug</a>
     ·
-    <a href="https://github.com/Money-Factory/businessfactory/issues">Request Feature</a>
+    <a href="https://github.com/Money-Factory/businessfactory/issues/new?&labels=kind%2Fenhancement&template=feature-request.md">Request Feature</a>
     <br />
     <br />
   </p>
