@@ -27,5 +27,16 @@
   // Run commands after the container is created.
   "postCreateCommand": ["pre-commit install"],
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node"
+"remoteUser": "node",
+"portsAttributes": {
+	"4040": {
+		"label": "ngrok"
+	},
+	"19000": {
+		"label": "manifest"
+	},
+	"19002": {
+		"label": "dev tools"
+	}
+}
 }
