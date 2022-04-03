@@ -7,9 +7,9 @@
     Let's do business.
     <br />
     <br />
-    <a href="https://github.com/Money-Factory/businessfactory/issues">Report Bug</a>
+    <a href="https://github.com/Money-Factory/businessfactory/issues/new?labels=kind%2Fbug&template=bug-report.md">Report Bug</a>
     ·
-    <a href="https://github.com/Money-Factory/businessfactory/issues">Request Feature</a>
+    <a href="https://github.com/Money-Factory/businessfactory/issues/new?&labels=kind%2Fenhancement&template=feature-request.md">Request Feature</a>
     <br />
     <br />
   </p>
@@ -65,39 +65,9 @@ Below are instructions for setting up your development environment.
 
 ### Prerequisites
 
-Install the necessary tools and pre-commit hooks so you can ensure your changes the checks.
+- Install [docker and docker-compose](https://docs.docker.com/get-docker/)
 
-- Expo Go app installed on your device
-
-- Expo account. You can use the cli to create one
-
-  ```sh
-  expo register
-  ```
-
-- yarn
-
-  ```sh
-  npm install --global yarn
-  ```
-
-- markdownlint
-
-  ```sh
-  npm install -g markdownlint-cli
-  ```
-
-- pre-commit
-
-  ```sh
-  pip install --user pre-commit
-  ```
-
-Then install the hooks
-
-```sh
-pre-commit install
-```
+- Determine your machine's local IP address
 
 ### Installation
 
@@ -107,25 +77,25 @@ pre-commit install
    git clone https://github.com/Money-Factory/businessfactory.git
    ```
 
-1. Install dependencies
+1. Add your local IP to [`.devcontainer/.env`](.devcontainer/.env)
 
    ```sh
-   yarn
+   REACT_NATIVE_PACKAGER_HOSTNAME=<your-local-ip>
    ```
 
-1. Log in with your expo account
+1. Run docker-compose to start the application
 
    ```sh
-   expo login
+   docker-compose -f ./.devcontainer/docker-compose.yml up --build
    ```
 
-1. Start the project
+1. Go to `<your-local-ip>:19002` to view the developer tools. You can install the Expo Go app and scan the QR code to open on a mobile device
+
+1. After you're done working and terminate the docker-compose proccess you can use the following to clean up the containers
 
    ```sh
-   yarn start
+   docker-compose -f ./.devcontainer/docker-compose.yml down
    ```
-
-1. Scan the QR code on your phone to install the app or press `w` to open the web app
 
 ## Contributing
 

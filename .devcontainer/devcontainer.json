@@ -2,18 +2,18 @@
   "name": "expo-dev",
   "dockerComposeFile": "docker-compose.yml",
   "service": "expo-app",
-  "workspaceFolder": "/app",
+  "workspaceFolder": "/home/node/app",
   //  IDs of extensions to be installed when the container is created.
   "extensions": [
-    "equinusocio.vsc-material-theme",
-    "equinusocio.vsc-material-theme-icons",
-    "ms-azuretools.vscode-docker",
-    "redhat.vscode-yaml",
     "bycedric.vscode-expo",
-    "msjsdiag.vscode-react-native",
-    "eg2.vscode-npm-script",
     "dbaeumer.vscode-eslint",
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+    "eg2.vscode-npm-script",
+    "equinusocio.vsc-material-theme-icons",
+    "equinusocio.vsc-material-theme",
+    "ms-azuretools.vscode-docker",
+    "msjsdiag.vscode-react-native",
+    "redhat.vscode-yaml"
   ],
   "forwardPorts": [19000, 19001, 19002],
   // Set *default* container specific settings.json values on container create.
@@ -27,5 +27,16 @@
   // Run commands after the container is created.
   "postCreateCommand": ["pre-commit install"],
   // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-  "remoteUser": "node"
+"remoteUser": "node",
+"portsAttributes": {
+	"4040": {
+		"label": "ngrok"
+	},
+	"19000": {
+		"label": "manifest"
+	},
+	"19002": {
+		"label": "dev tools"
+	}
+}
 }
