@@ -2,9 +2,12 @@
   "name": "business-factory",
   "packageManager": "yarn@3.2.0",
   "version": "0.0.1",
+  "description": "An incremental game about business.",
+  "license": "GPLv3",
   "main": "source/App.tsx",
   "scripts": {
     "start": "expo start --tunnel",
+    "start:dc": "expo start --tunnel --dev-client",
     "android": "expo start --tunnel --android",
     "ios": "expo start --tunnel --ios",
     "web": "expo start --tunnel --web",
