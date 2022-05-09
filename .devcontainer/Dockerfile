@@ -9,11 +9,9 @@ RUN mkdir --parents /home/node/app
 COPY --chown=node:node . /home/node/app
 WORKDIR /home/node/app
 
+EXPOSE 19000-19006
+
 RUN pip3 install --user pre-commit \
     && npm install --global expo-cli markdownlint-cli \
     && pre-commit install \
     && yarn
-
-EXPOSE 19000-19006
-
-CMD yarn start

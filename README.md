@@ -89,7 +89,11 @@ Below are instructions for setting up your development environment.
    docker-compose -f ./.devcontainer/docker-compose.yml up --build
    ```
 
-1. Go to `<your-local-ip>:19002` to view the developer tools. You can install the Expo Go app and scan the QR code to open on a mobile device
+1. Attach to the container in VS Code and start the app
+
+```sh
+yarn start
+```
 
 1. After you're done working and terminate the docker-compose proccess you can use the following to clean up the containers
 

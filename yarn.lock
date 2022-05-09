@@ -1107,7 +1107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-object-assign@npm:^7.0.0, @babel/plugin-transform-object-assign@npm:^7.16.7":
+"@babel/plugin-transform-object-assign@npm:^7.0.0, @babel/plugin-transform-object-assign@npm:^7.10.4":
   version: 7.16.7
   resolution: "@babel/plugin-transform-object-assign@npm:7.16.7"
   dependencies:
@@ -2705,31 +2705,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/datetimepicker@npm:^6.1.3":
-  version: 6.1.3
-  resolution: "@react-native-community/datetimepicker@npm:6.1.3"
+"@react-native-community/datetimepicker@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@react-native-community/datetimepicker@npm:4.0.0"
   dependencies:
     invariant: ^2.2.4
-  checksum: c33254f31606fa3c150eb5d41408fea9188fb5a48258e96cd450edf80bc2549c815da30f1fd689e32bf2e326a56969fc61fc898b8ff76dfd51e3a6135a2f9865
+  checksum: 4a86807ee3bb3437c1a57ef33e4066f58c5d23c8f22231007964247ea9c8c7abfc27342ee85cc42df0c2776061570cdf8e4eb802024fcccaf71ee7fe3ec319d9
   languageName: node
   linkType: hard
 
-"@react-native-community/netinfo@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "@react-native-community/netinfo@npm:8.3.0"
+"@react-native-community/netinfo@npm:7.1.3":
+  version: 7.1.3
+  resolution: "@react-native-community/netinfo@npm:7.1.3"
   peerDependencies:
     react-native: ">=0.59"
-  checksum: 4b57c44d45c896e500d1ba11b88e1cab5d78723f53eb24b4c21a643cb38a5e1d35fe84c19dfad7a5e967117de1b78125d854d0363b1134c7ce71c9c2bc1a17d0
+  checksum: 53219753880379b8764504097c51e19f666f42deaeaf171b45eae214a11e0dc5f695c608e73a11c4e54961e28d5816a98d7bbfba1260b0980b048222e56ad23c
   languageName: node
   linkType: hard
 
-"@react-native-picker/picker@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "@react-native-picker/picker@npm:2.4.1"
+"@react-native-picker/picker@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@react-native-picker/picker@npm:2.2.1"
   peerDependencies:
     react: 16 || 17
     react-native: ">=0.57"
-  checksum: c47c7c307eb713715905e58ca693e128ef424720d26a88c775008960d3ebd60f2f791818ec595bfd41d5d308c684c1434839b7948f649936659df1401e7e1057
+  checksum: ae4842a395f2bb978ec15113868ce2fa4958faa5b4638bfb54979c93928ff8eda010528d996f1b4fe701c810d9fcac27f7db29ea72334762615cd72d4c1b2c32
   languageName: node
   linkType: hard
 
@@ -5045,9 +5045,9 @@ __metadata:
     "@expo/ngrok": ^4.1.0
     "@expo/vector-icons": ^12.0.0
     "@react-native-community/blur": ^3.6.0
-    "@react-native-community/datetimepicker": ^6.1.3
-    "@react-native-community/netinfo": ^8.3.0
-    "@react-native-picker/picker": ^2.4.1
+    "@react-native-community/datetimepicker": 4.0.0
+    "@react-native-community/netinfo": 7.1.3
+    "@react-native-picker/picker": 2.2.1
     "@react-navigation/bottom-tabs": ^6.0.5
     "@react-navigation/native": ^6.0.2
     "@react-navigation/native-stack": ^6.1.0
@@ -5079,8 +5079,8 @@ __metadata:
     react: 17.0.1
     react-dom: 17.0.1
     react-native: 0.64.3
-    react-native-gesture-handler: ^2.3.2
-    react-native-reanimated: ^2.5.0
+    react-native-gesture-handler: ~2.1.0
+    react-native-reanimated: ~2.3.1
     react-native-safe-area-context: 3.3.2
     react-native-screens: ~3.10.1
     react-native-ui-lib: ^6.12.1
@@ -12639,6 +12639,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mockdate@npm:^3.0.2":
+  version: 3.0.5
+  resolution: "mockdate@npm:3.0.5"
+  checksum: 72b66786d9e072379693f80bf9fb82eb5153c9741030a4294184e3ccaf952d0713fae8966f77780580cf902f8ec7ccc95577b0ad47980d255e2ffb71fc7ca49c
+  languageName: node
+  linkType: hard
+
 "moment@npm:^2.24.0":
   version: 2.29.2
   resolution: "moment@npm:2.29.2"
@@ -15027,39 +15034,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-gesture-handler@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "react-native-gesture-handler@npm:2.3.2"
+"react-native-gesture-handler@npm:~2.1.0":
+  version: 2.1.3
+  resolution: "react-native-gesture-handler@npm:2.1.3"
   dependencies:
     "@egjs/hammerjs": ^2.0.17
     hoist-non-react-statics: ^3.3.0
     invariant: ^2.2.4
     lodash: ^4.17.21
     prop-types: ^15.7.2
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: d0d3cc4047036296dc3c2322fdba543a39cfa0662dd7bb5e334b2984ee342e6428c3c93521c22b16e74182ebfc39d1e89c0b8c9aff3caea47aa7af5fb7ba95a9
+  checksum: 479386ee9814f2e72ebc1cf9494f4a74f3652e87bd79ccf5d78c3dea455d924b3b41016dce3da466155304cd4c1dac019907ca2667e1d9da42ab3f28d4362e29
   languageName: node
   linkType: hard
 
-"react-native-reanimated@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "react-native-reanimated@npm:2.5.0"
+"react-native-reanimated@npm:~2.3.1":
+  version: 2.3.3
+  resolution: "react-native-reanimated@npm:2.3.3"
   dependencies:
-    "@babel/plugin-transform-object-assign": ^7.16.7
+    "@babel/plugin-transform-object-assign": ^7.10.4
     "@types/invariant": ^2.2.35
     invariant: ^2.2.4
     lodash.isequal: ^4.5.0
-    react-native-screens: ^3.11.1
-    setimmediate: ^1.0.5
+    mockdate: ^3.0.2
+    react-native-screens: ^3.4.0
     string-hash-64: ^1.0.3
   peerDependencies:
-    "@babel/preset-typescript": "*"
     react: "*"
     react-native: "*"
     react-native-gesture-handler: "*"
-  checksum: 39251ce1cd03f2398372a6e5c2e67d0fef7e3e04964ccac33419e34db687e88828751a602a020eaef34fd569eabba34bda994b4f8e2fc3f500f96063db941495
+  checksum: 3f5050a63b795bd60ece59d2f2fe7d604c16cb4212c437ec15fdef55ad16e163ab3f08465c8592e3237bf4492c48d11926801b06a20a497c56edaaf0d260a49a
   languageName: node
   linkType: hard
 
@@ -15090,7 +15093,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-screens@npm:^3.11.1":
+"react-native-screens@npm:^3.4.0":
   version: 3.13.1
   resolution: "react-native-screens@npm:3.13.1"
   dependencies:

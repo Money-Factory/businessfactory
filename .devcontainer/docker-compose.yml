@@ -16,3 +16,5 @@ services:
     env_file: .env
     volumes:
       - ../source:/home/node/app/source
+    stdin_open: true
+    tty: true
