@@ -4,9 +4,15 @@ import React from 'react'
 export default function Game() {
   return (
     <View style={styles.container}>
-        <View style={styles.middleArea}/>
-        <View style={styles.topAea}/>
-        <View style={styles.bottomArea}/>
+        <View style={styles.middleArea}>
+            {/* Add Main game component here */}
+        </View>
+        <View style={styles.topAea}>
+            {/* Add top game component here */}
+        </View>
+        <View style={styles.bottomArea}>
+            {/* Add bottom game component here */}
+        </View>
     </View>
   )
 }
