@@ -2,6 +2,7 @@
   "extends": [
     "airbnb",
     "airbnb/hooks",
+    "plugin:import/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
     "prettier"
@@ -25,6 +26,10 @@
       }
     ],
     "no-use-before-define": "off",
-    "import/extensions": ["error", "never"]
+    "import/extensions": ["error", "never", { "json": "always" }],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ]
   }
 }
