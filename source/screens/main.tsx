@@ -5,14 +5,12 @@ import {
   HStack,
   Center,
   Heading,
-  NativeBaseProvider,
   VStack,
   Box,
 } from "native-base";
 import NativeBaseIcon from "../components/NativeBaseIcon";
 
 const Main: React.FC = () => (
-    <NativeBaseProvider>
       <Center
         _dark={{ bg: "blueGray.900" }}
         _light={{ bg: "blueGray.50" }}
@@ -47,7 +45,6 @@ const Main: React.FC = () => (
           </Link>
         </VStack>
       </Center>
-    </NativeBaseProvider>
   )
 
 export default Main;

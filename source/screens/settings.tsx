@@ -6,14 +6,11 @@ import {
   Heading,
   Switch,
   useColorMode,
-  NativeBaseProvider,
   VStack,
   Box,
 } from "native-base";
-import NativeBaseIcon from "../components/NativeBaseIcon";
 
 const Settings: React.FC = () => (
-    <NativeBaseProvider>
       <Center
         _dark={{ bg: "blueGray.900" }}
         _light={{ bg: "blueGray.50" }}
@@ -43,7 +40,6 @@ const Settings: React.FC = () => (
           <ToggleDarkMode />
         </VStack>
       </Center>
-    </NativeBaseProvider>
   )
 
 // Color Switch Component
