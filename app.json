@@ -3,11 +3,9 @@
     "entryPoint": "./source/App.tsx",
     "name": "business-factory",
     "slug": "business-factory",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./source/assets/images/icon.png",
-    "scheme": "business-factory",
-    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./source/assets/images/splash.png",
       "resizeMode": "contain",
@@ -16,14 +14,16 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./source/assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#FFFFFF"
       }
     },
     "web": {

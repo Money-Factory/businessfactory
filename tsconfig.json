@@ -1,14 +1,5 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "lib": ["es2017", "DOM"],
-    "allowJs": true,
-    "jsx": "react-native",
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true
-  },
+  "extends": "expo/tsconfig.base",
   "exclude": [
     "node_modules",
     "babel.config.js",
@@ -16,5 +7,7 @@
     "jest.config.js",
     "webpack.config.js"
   ],
-  "extends": "expo/tsconfig.base"
+  "compilerOptions": {
+    "strict": true
+  }
 }
