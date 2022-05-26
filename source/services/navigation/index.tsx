@@ -11,9 +11,9 @@ import { ModalProps, ScreenProps } from '../../screens';
 export default class Nav implements IService {
   private initialized = false;
 
-  n: React.RefObject<NavigationContainerRef<ScreenProps>> = React.createRef();
+  navContainer: React.RefObject<NavigationContainerRef<ScreenProps>> = React.createRef();
 
-  r: string | undefined;
+  route: string | undefined;
 
   init = async (): PVoid => {
     if (!this.initialized) {
@@ -23,12 +23,12 @@ export default class Nav implements IService {
 
   // on init methods
   onReady = (): void => {
-    this.r = this.n.current?.getCurrentRoute()?.name;
+    this.route = this.navContainer.current?.getCurrentRoute()?.name;
   };
 
   onStateChange = (): void => {
-    const prevName = this.r;
-    const currentName = this.n.current?.getCurrentRoute()?.name;
+    const prevName = this.route;
+    const currentName = this.navContainer.current?.getCurrentRoute()?.name;
 
     if (!!prevName && !!currentName) {
       const params = { to: currentName, from: prevName };
@@ -40,7 +40,7 @@ export default class Nav implements IService {
       console.log('onStateChange:', JSON.stringify(params, null, 2));
     }
 
-    this.r = currentName;
+    this.route = currentName;
   };
 
   // Navigation methods
@@ -48,11 +48,11 @@ export default class Nav implements IService {
     name: T,
     passProps?: ScreenProps[T]
   ): void => {
-    this.n.current?.dispatch(StackActions.push(name, passProps));
+    this.navContainer.current?.dispatch(StackActions.push(name, passProps));
   };
 
   pop = (): void => {
-    this.n.current?.goBack();
+    this.navContainer.current?.goBack();
   };
 
   show = <T extends keyof ModalProps>(
@@ -70,7 +70,7 @@ export default class Nav implements IService {
     name: T,
     passProps?: ScreenProps[T]
   ): void => {
-    this.n.current?.dispatch(
+    this.navContainer.current?.dispatch(
       CommonActions.navigate({
         name,
         params: passProps,

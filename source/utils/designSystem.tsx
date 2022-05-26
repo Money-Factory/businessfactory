@@ -4,55 +4,34 @@ import { Appearance } from 'react-native';
 
 // TODO REPLACE THIS
 const ui = {
-  isSystemAppearance: true,
+  isSystemAppearance: false,
   appearance: 'dark' as AppearanceMode,
 };
 
-export const BaseTheme = extendTheme(() => {
-    // const { ui } = stores;
-    const theme = ui.isSystemAppearance ? 
-        Appearance.getColorScheme() :
-        ui.appearance;
-
-    return {
+export const BaseTheme = extendTheme(() => 
+     ({
         config: {
-            useSystemColorMode: false,
-            initialColorMode: theme,
+            useSystemColorMode: ui.isSystemAppearance,
+            initialColorMode: ui.appearance,
         },
-    };
-});
+    })
+);
 
-export const getThemeStatusBarStyle = (
-  ca?: CurrentAppearance
-): StatusBarStyle => {
-  // const { ui } = stores;
-
-  const current: CurrentAppearance = ca ?? {
-    value: ui.appearance,
-    system: ui.isSystemAppearance,
-  };
-
-  const appearance = current.system
+export const getThemeStatusBarStyle = (): StatusBarStyle => {
+  const appearance = ui.isSystemAppearance
     ? Appearance.getColorScheme()
-    : current.value;
+    : ui.appearance;
   switch (appearance) {
-    case 'dark':
-      return 'light-content';
-    default:
+    case 'light':
       return 'dark-content';
+    default:
+      return 'light-content';
   }
 };
 
 export const getThemeStatusBarBGColor = (): string => BaseTheme.colors.rose.toString();
 
-export const getNavigationTheme = (ca?: CurrentAppearance): Theme => {
-  // const { ui } = stores;
-
-  const current: CurrentAppearance = ca ?? {
-    value: ui.appearance,
-    system: ui.isSystemAppearance,
-  };
-
+export const getNavigationTheme = (): Theme => {
   // for more information - https://reactnavigation.org/docs/themes
   const MyDefaultTheme: Theme = {
     dark: false,
@@ -80,28 +59,16 @@ export const getNavigationTheme = (ca?: CurrentAppearance): Theme => {
     },
   };
 
-  const appearance = current.system
+  const appearance = ui.isSystemAppearance
     ? Appearance.getColorScheme()
-    : current.value;
+    : ui.appearance;
   switch (appearance) {
     case 'dark':
       return MyDarkTheme;
-    case 'light':
-      return MyDefaultTheme;
     default:
-      return DefaultTheme;
+      return MyDefaultTheme;
   }
 };
 
-export const getHeaderBlurEffect = (
-  ca?: CurrentAppearance
-): 'regular' | 'light' | 'dark' => {
-  // const { ui } = stores;
-
-  const current: CurrentAppearance = ca ?? {
-    value: ui.appearance,
-    system: ui.isSystemAppearance,
-  };
-
-  return current.system ? 'regular' : current.value;
-};
+export const getHeaderBlurEffect = (): 'regular' | 'light' | 'dark' => 
+  ui.isSystemAppearance ? 'regular' : ui.appearance;

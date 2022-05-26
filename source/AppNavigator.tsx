@@ -20,7 +20,7 @@ const AppNavigator = (): JSX.Element => {
         backgroundColor={getThemeStatusBarBGColor()}
       />
       <NavigationContainer
-        ref={nav.n}
+        ref={nav.navContainer}
         onReady={nav.onReady}
         onStateChange={nav.onStateChange}
         theme={getNavigationTheme()}
