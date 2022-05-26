@@ -1,12 +1,10 @@
 import 'expo-dev-client';
 import { registerRootComponent } from 'expo';
-import React, { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { LogBox } from 'react-native';
 
-import { NativeBaseProvider } from 'native-base';
 import AppNavigator from './AppNavigator';
-import { BaseTheme } from './utils/designSystem';
 import { initServices, ServicesProvider } from './services';
 
 LogBox.ignoreLogs(['Require']);
@@ -28,9 +26,7 @@ const App = (): JSX.Element => {
   }, [startApp]);
 
   return (
-    <NativeBaseProvider theme={BaseTheme}>
       <ServicesProvider>{ready ? <AppNavigator /> : null}</ServicesProvider>
-    </NativeBaseProvider>
   );
 };
 

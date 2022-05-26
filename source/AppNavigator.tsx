@@ -1,8 +1,10 @@
 import { StatusBar, useColorScheme } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
+import { NativeBaseProvider } from 'native-base';
 import { RootNavigator } from './screens';
 import {
+  BaseTheme,
   getNavigationTheme,
   getThemeStatusBarBGColor,
   getThemeStatusBarStyle,
@@ -25,7 +27,9 @@ const AppNavigator = (): JSX.Element => {
         onStateChange={nav.onStateChange}
         theme={getNavigationTheme()}
       >
-        <RootNavigator />
+        <NativeBaseProvider theme={BaseTheme}>
+          <RootNavigator />
+        </NativeBaseProvider>
       </NavigationContainer>
     </>
   );
