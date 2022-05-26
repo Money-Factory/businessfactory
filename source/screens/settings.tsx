@@ -21,7 +21,6 @@ const Settings: React.FC = () => (
         flex={1}
       >
         <VStack space={5} alignItems="center">
-          <NativeBaseIcon />
           <Heading size="lg">Settings</Heading>
           <HStack space={2} alignItems="center">
             <Text>Edit</Text>
