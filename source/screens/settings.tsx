@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Text,
-  Link,
   HStack,
   Center,
   Heading,
@@ -38,15 +37,10 @@ const Settings: React.FC = () => (
               _dark={{ bg: "blueGray.800" }}
               _light={{ bg: "blueGray.200" }}
             >
-              App.js
+              Settings.js
             </Box>
             <Text>and save to reload.</Text>
           </HStack>
-          <Link href="https://docs.nativebase.io" isExternal>
-            <Text color="primary.500" underline fontSize="xl">
-              Learn NativeBase
-            </Text>
-          </Link>
           <ToggleDarkMode />
         </VStack>
       </Center>
